@@ -1,9 +1,9 @@
 class Triangle
- attr_accessor  :equilateral, :isosceles,:scalene
-  def initialize(equilateral, isosceles, scalene)
-    @equilateral = equilateral
-    @isosceles = isosceles
-    @scalene = scalene
+ attr_reader :s1, :s2, :s3
+  def initialize(s1, s2, s3)
+    @s1 = s1
+    @s2 = s2
+    @s3 = s3
   end
   def kind(triangle)
     if equilateral.length +  isosceles.length < scalene.length
