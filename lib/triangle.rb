@@ -9,8 +9,7 @@ class Triangle
     if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= s1 ||(s1 + s3) <= s2
       begin
         raise TriangleError
-         rescue TriangleError => error
-         puts error.message
+        puts error.message
      end
    elsif
      s1 == s2 && s1 == s3
