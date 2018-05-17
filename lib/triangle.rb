@@ -1,5 +1,5 @@
 class Triangle
- attr_reader :s1, :s2, :s3
+ attr_accessor :s1, :s2, :s3
   def initialize(s1, s2, s3)
     @s1 = s1
     @s2 = s2
@@ -12,16 +12,16 @@ class Triangle
          rescue TriangleError => error
          puts error.message
      end
-   elsif 
+   elsif
      s1 == s2 && s1 == s3
      self.kind = equilateral
-   elsif 
+   elsif
      s1 == s2 || s2 == s3 || s1 == s3
      self.kind = isosceles
    else
      self.kind = scalene
    end
-     
+
    end
  end
 
